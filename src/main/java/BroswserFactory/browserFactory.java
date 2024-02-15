@@ -36,7 +36,7 @@ public static WebDriver setUpBrowser(String browser , String url) {
 		//driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(50));
 		driver.manage().window().maximize();
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		
 		return driver;
 	}
